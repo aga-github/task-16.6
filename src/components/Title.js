@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './Title.css';
 
 class Title extends React.Component {
 	constructor(props) {
@@ -7,9 +8,9 @@ class Title extends React.Component {
 
 	render() {
 		return (
-			<div className="infoWrapper">
-				<h1 className="appTitle">ToDo App - Webpack + React</h1>
-				<p className="taskNumber">{this.props.data.length}</p>
+			<div className={style.infoWrapper}>
+				<h1 className={style.taskTitle}>ToDo App - Webpack + React</h1>
+				<p className={style.taskNumber}>Tasks to finish: {this.props.data.length}</p>
 			</div>
 		)
 	}
